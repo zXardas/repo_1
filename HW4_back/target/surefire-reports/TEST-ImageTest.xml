@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ImageTest" time="7.304" tests="10" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="P:\gamedev\Тестирование\Java\HW4_back\target\test-classes;P:\gamedev\Тестирование\Java\HW4_back\target\classes;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Half\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Half\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Half\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit5\2.14.0\allure-junit5-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit-platform\2.14.0\allure-junit-platform-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.2\junit-platform-launcher-1.7.2.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\Half\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\Half\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\Half\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-rest-assured\2.14.0\allure-rest-assured-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-attachments\2.14.0\allure-attachments-2.14.0.jar;C:\Users\Half\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Half\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Half\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Half\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Half\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Half\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Half\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Half\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Half\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Half\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Half\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Half\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\Half\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Samara"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Half\AppData\Local\Temp\surefire498515126483908144\surefirebooter3899464678347932448.jar C:\Users\Half\AppData\Local\Temp\surefire498515126483908144 2021-10-14T13-20-33_469-jvmRun1 surefire7201614498634204035tmp surefire_01555773570153313154tmp"/>
+    <property name="surefire.test.class.path" value="P:\gamedev\Тестирование\Java\HW4_back\target\test-classes;P:\gamedev\Тестирование\Java\HW4_back\target\classes;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Half\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Half\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Half\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit5\2.14.0\allure-junit5-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit-platform\2.14.0\allure-junit-platform-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.2\junit-platform-launcher-1.7.2.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\Half\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\Half\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\Half\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-rest-assured\2.14.0\allure-rest-assured-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-attachments\2.14.0\allure-attachments-2.14.0.jar;C:\Users\Half\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Half\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Half\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Half\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Half\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Half\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Half\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Half\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Half\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Half\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Half\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Half\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\Half\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="target/allure-results"/>
+    <property name="user.home" value="C:\Users\Half"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="P:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="basedir" value="P:\gamedev\Тестирование\Java\HW4_back"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Half\AppData\Local\Temp\surefire498515126483908144\surefirebooter3899464678347932448.jar;C:\Users\Half\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
+    <property name="sun.boot.class.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;P:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="Half"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Half\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Half\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="P:\gamedev\Тестирование\Java\HW4_back"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;P:\gamedev\Тестирование\Java\allure-commandline-2.14.0\allure-2.14.0\bin;C:\Users\Half\AppData\Local\Microsoft\WindowsApps;p:\Programs\Fiddler;C:\Users\Half\AppData\Local\Microsoft\WindowsApps;P:\gamedev\Тестирование\Java\allure-commandline-2.14.0\allure-2.14.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test1UploadFileImageTestWithNoInfo" classname="ImageTest" time="1.451">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 334
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:41 GMT
+ETag: W/"20ade834908f14c63dae328325380c48884057d4"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=db6bb8212434124a2e9366ec0b02f886; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.16
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1229
+X-Post-Rate-Limit-Reset: 3187
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12294
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1966
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "ywXDNKo",
+        "title": null,
+        "description": null,
+        "datetime": 1634203241,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "mU1JKURY7kT46Nn",
+        "name": "",
+        "link": "https://i.imgur.com/ywXDNKo.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test2UploadFileImageTestWithNoInfoCheckRegEx" classname="ImageTest" time="1.187">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 333
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:43 GMT
+ETag: W/"898e34268b32ed29d787d89db99d72b92b523b88"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=c332e52e96940eda6999f6958f6aa0dc; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.1.51
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1228
+X-Post-Rate-Limit-Reset: 3186
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12293
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1965
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "2fLTqOA",
+        "title": null,
+        "description": null,
+        "datetime": 1634203243,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "rP5q0yBSStY1nta",
+        "name": "",
+        "link": "https://i.imgur.com/2fLTqOA.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test3UploadFileImageTestWithInfo" classname="ImageTest" time="1.076">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 348
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:44 GMT
+ETag: W/"5c6a7acfa88076ac7f2390ec88896d3de062d25c"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=87e35be8d1f3089dab8331d4dff181a8; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.128
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1227
+X-Post-Rate-Limit-Reset: 3185
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12292
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1964
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "g8fHwQV",
+        "title": "titleCheck",
+        "description": "descriptionCheck",
+        "datetime": 1634203244,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "tq7gJqpas9uFQHT",
+        "name": "nameCheck.jpg",
+        "link": "https://i.imgur.com/g8fHwQV.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test4UploadFileBaseImageTestWithNoInfo" classname="ImageTest" time="0.887">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 331
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:45 GMT
+ETag: W/"80a4bdcbf6809c473131c66a9e49c48724c2d48a"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=6845e16709e23c36ee90992dc3eb0354; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.128
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1226
+X-Post-Rate-Limit-Reset: 3184
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12291
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1963
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "xGWoDPI",
+        "title": null,
+        "description": null,
+        "datetime": 1634203245,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "k78km8iphlOsIa4",
+        "name": "",
+        "link": "https://i.imgur.com/xGWoDPI.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test5UploadFileBaseImageTestWithNoInfoCheckRegEx" classname="ImageTest" time="0.887">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 333
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:46 GMT
+ETag: W/"4dc657bc80bff67a1a520bf26c2c71383e1dec1e"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=5897975fd345035bb655de45b7ce0bd4; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.128
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1225
+X-Post-Rate-Limit-Reset: 3183
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12290
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1962
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "2Z8G3Am",
+        "title": null,
+        "description": null,
+        "datetime": 1634203245,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "xOeMjTM0wJwSUia",
+        "name": "",
+        "link": "https://i.imgur.com/2Z8G3Am.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test6UploadFileBaseImageTestWithInfo" classname="ImageTest" time="1.169">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 347
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Thu, 14 Oct 2021 09:20:47 GMT
+ETag: W/"2cfe2e8fea6f1a73d9b337b598b15861fee48e3a"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=16f7cd8eff1760a07f5ef54006e3a647; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.128
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1224
+X-Post-Rate-Limit-Reset: 3182
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12289
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1961
+X-RateLimit-UserReset: 1634206424
+
+{
+    "data": {
+        "id": "vvOYJIs",
+        "title": "titleCheck",
+        "description": "descriptionCheck",
+        "datetime": 1634203247,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "jaVZw0Jbv0ftteU",
+        "name": "nameCheck.jpg",
+        "link": "https://i.imgur.com/vvOYJIs.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test7FavoriteImage" classname="ImageTest" time="0.547">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Server: nginx
+Date: Thu, 14 Oct 2021 09:20:47 GMT
+Content-Type: application/json
+Vary: Accept-Encoding
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1223
+X-Post-Rate-Limit-Reset: 3181
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12288
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1960
+X-RateLimit-UserReset: 1634206424
+ETag: W/"115e5cdd04ba8fa979c9a2045e98b7c455c1683f"
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+X-origin-ip: 172.16.2.99
+Content-Encoding: gzip
+Set-Cookie: UPSERVERID=upload.i-0d10f4a5ba7ede83b.production; path=/
+transfer-encoding: chunked
+
+{
+    "data": "favorited",
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test8UFavoriteImage" classname="ImageTest" time="0.016">
+    <error type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: vvOYJIs.
+	at ImageTest.test8UFavoriteImage(ImageTest.java:298)
+]]></error>
+  </testcase>
+  <testcase name="test9UpdateImage" classname="ImageTest" time="0.01">
+    <error type="groovy.lang.MissingPropertyException"><![CDATA[groovy.lang.MissingPropertyException: No such property: v2 for class: java.lang.String
+	at ImageTest.test9UpdateImage(ImageTest.java:312)
+]]></error>
+  </testcase>
+  <testcase name="test10GetImage" classname="ImageTest" time="0.045">
+    <error type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: vvOYJIs.
+	at ImageTest.test10GetImage(ImageTest.java:332)
+]]></error>
+  </testcase>
+</testsuite>
