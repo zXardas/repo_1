@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: AccountTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.035 s <<< FAILURE! - in AccountTests
+AccountTests.getAccountInfoWithAssertionsAfterTest  Time elapsed: 0.622 s  <<< ERROR!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at AccountTests.getAccountInfoWithAssertionsAfterTest(AccountTests.java:57)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at AccountTests.getAccountInfoWithAssertionsAfterTest(AccountTests.java:57)
+
