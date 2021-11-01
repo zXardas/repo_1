@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ImageTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 7.304 s <<< FAILURE! - in ImageTest
+ImageTest.test8UFavoriteImage  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: vvOYJIs.
+	at ImageTest.test8UFavoriteImage(ImageTest.java:298)
+
+ImageTest.test9UpdateImage  Time elapsed: 0.01 s  <<< ERROR!
+groovy.lang.MissingPropertyException: No such property: v2 for class: java.lang.String
+	at ImageTest.test9UpdateImage(ImageTest.java:312)
+
+ImageTest.test10GetImage  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.IllegalArgumentException: Path parameters were not correctly defined. Redundant path parameters are: vvOYJIs.
+	at ImageTest.test10GetImage(ImageTest.java:332)
+
