@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ImageTest" time="2.335" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="P:\gamedev\Тестирование\Java\HW3_back\target\test-classes;P:\gamedev\Тестирование\Java\HW3_back\target\classes;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Half\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Half\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Half\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit5\2.14.0\allure-junit5-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit-platform\2.14.0\allure-junit-platform-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.2\junit-platform-launcher-1.7.2.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\Half\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Half\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\Half\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-rest-assured\2.15.0\allure-rest-assured-2.15.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-attachments\2.15.0\allure-attachments-2.15.0.jar;C:\Users\Half\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Half\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Half\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Half\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Half\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Half\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Half\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Half\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Half\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Samara"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Half\AppData\Local\Temp\surefire8379376364899721052\surefirebooter2169495190451527198.jar C:\Users\Half\AppData\Local\Temp\surefire8379376364899721052 2021-10-09T16-45-02_059-jvmRun1 surefire3895794185635914780tmp surefire_08153745829741959484tmp"/>
+    <property name="surefire.test.class.path" value="P:\gamedev\Тестирование\Java\HW3_back\target\test-classes;P:\gamedev\Тестирование\Java\HW3_back\target\classes;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Half\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Half\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\Half\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit5\2.14.0\allure-junit5-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-junit-platform\2.14.0\allure-junit-platform-2.14.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\Half\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.2\junit-platform-launcher-1.7.2.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\Half\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Half\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Half\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\Half\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-rest-assured\2.15.0\allure-rest-assured-2.15.0.jar;C:\Users\Half\.m2\repository\io\qameta\allure\allure-attachments\2.15.0\allure-attachments-2.15.0.jar;C:\Users\Half\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Half\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Half\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Half\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Half\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Half\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Half\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Half\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Half\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Half\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Half\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Half\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Half\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="target/allure-results"/>
+    <property name="user.home" value="C:\Users\Half"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="P:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="basedir" value="P:\gamedev\Тестирование\Java\HW3_back"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Half\AppData\Local\Temp\surefire8379376364899721052\surefirebooter2169495190451527198.jar;C:\Users\Half\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
+    <property name="sun.boot.class.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;P:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;P:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="Half"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Half\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Half\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="P:\gamedev\Тестирование\Java\HW3_back"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="P:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;P:\gamedev\Тестирование\Java\allure-commandline-2.14.0\allure-2.14.0\bin;C:\Users\Half\AppData\Local\Microsoft\WindowsApps;p:\Programs\Fiddler;C:\Users\Half\AppData\Local\Microsoft\WindowsApps;P:\gamedev\Тестирование\Java\allure-commandline-2.14.0\allure-2.14.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="P:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="uploadFileTest" classname="ImageTest" time="1.229">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 338
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Sat, 09 Oct 2021 12:45:09 GMT
+ETag: W/"7ab70c98e7e930d5a2d6e70a9d7512a89a51357c"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=d4a0dd3c23efbd105a542d008e34f2db; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.128
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1242
+X-Post-Rate-Limit-Reset: 3101
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12414
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1946
+X-RateLimit-UserReset: 1633786172
+
+{
+    "data": {
+        "id": "79bgxV1",
+        "title": "qwer",
+        "description": null,
+        "datetime": 1633783508,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "TD3VJQjWhZnklsq",
+        "name": "",
+        "link": "https://i.imgur.com/79bgxV1.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="uploadFileImageTestWithNoInfo" classname="ImageTest" time="1.1">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Content-Length: 328
+Access-Control-Allow-Headers: Authorization, Content-Type, Accept, X-Mashape-Authorization, IMGURPLATFORM, IMGURUIDJAFO, SESSIONCOUNT, IMGURMWBETA, IMGURMWBETAOPTIN
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-RateLimit-ClientLimit, X-RateLimit-ClientRemaining, X-RateLimit-UserLimit, X-RateLimit-UserRemaining, X-RateLimit-UserReset, Geo-City, Geo-Region, Geo-Metro-Code, Geo-Country-Code
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Sat, 09 Oct 2021 12:45:10 GMT
+ETag: W/"6776af74dc62db24d3c34a60bf66d8e1172ccaef"
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: IMGURSESSION=c59966c30d30f3322296f0d5cbf55d6d; path=/; domain=.imgur.com; secure; HttpOnly
+Set-Cookie: _nc=1; path=/; domain=.imgur.com; HttpOnly
+Vary: Accept-Encoding
+X-origin-ip: 172.16.2.101
+X-Post-Rate-Limit-Limit: 1250
+X-Post-Rate-Limit-Remaining: 1241
+X-Post-Rate-Limit-Reset: 3100
+X-RateLimit-ClientLimit: 12500
+X-RateLimit-ClientRemaining: 12413
+X-RateLimit-UserLimit: 2000
+X-RateLimit-UserRemaining: 1945
+X-RateLimit-UserReset: 1633786172
+
+{
+    "data": {
+        "id": "uvjnnVn",
+        "title": null,
+        "description": null,
+        "datetime": 1633783510,
+        "type": "image/jpeg",
+        "animated": false,
+        "width": 179,
+        "height": 139,
+        "size": 2932,
+        "views": 0,
+        "bandwidth": 0,
+        "vote": null,
+        "favorite": false,
+        "nsfw": null,
+        "section": null,
+        "account_url": null,
+        "account_id": 155365925,
+        "is_ad": false,
+        "in_most_viral": false,
+        "has_sound": false,
+        "tags": [
+            
+        ],
+        "ad_type": 0,
+        "ad_url": "",
+        "edited": "0",
+        "in_gallery": false,
+        "deletehash": "iwmLChtP28huC88",
+        "name": "",
+        "link": "https://i.imgur.com/uvjnnVn.jpg"
+    },
+    "success": true,
+    "status": 200
+}
+]]></system-out>
+  </testcase>
+</testsuite>
